@@ -42,7 +42,7 @@ The infrastructure is designed for a standard **3-tier web application** (web �
 
 ### 2.1 High-Level Architecture Diagram
 
-![[aws-3-tier-vpc-architecture.svg]]
+![AWS 3-Tier VPC Architecture](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/aws-3-tier-vpc-architecture.svg)
 
 ### 2.2 Architecture Description
 
@@ -110,7 +110,7 @@ The VPC (`10.0.0.0/16`) is divided into **three network tiers** across **two Ava
 
 ### 3.2 Subnet Design
 
-![[subnet.png]]
+![Subnet](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/subnet.png)
 
 |Subnet Name|CIDR|AZ|Tier|Internet Access|Purpose|
 |---|---|---|---|---|---|
@@ -128,7 +128,7 @@ The VPC (`10.0.0.0/16`) is divided into **three network tiers** across **two Ava
 
 ### 3.3 Route Tables
 
-![[route-tables.png]]
+![Route Tables](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/route-tables.png)
 
 |Route Table|Associated Subnets|Routes|
 |---|---|---|
@@ -141,11 +141,11 @@ The VPC (`10.0.0.0/16`) is divided into **three network tiers** across **two Ava
 
 The data route table intentionally has **no `0.0.0.0/0` route**. Databases cannot initiate outbound internet connections under any circumstances. AWS service access is provided exclusively through Gateway VPC Endpoints.
 
-![[data-route-table.png]]
+![Data Route Table](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/data-route-table.png)
 
 ### 3.4 NAT Gateways
 
-![[nat-gateway.png]]
+![NAT Gateway](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/nat-gateway.png)
 
 |NAT Gateway|Elastic IP|Public Subnet|AZ|
 |---|---|---|---|
@@ -194,7 +194,7 @@ The data route table intentionally has **no `0.0.0.0/0` route**. Databases canno
 
 ### 4.2 Security Groups
 
-![[security-groups.png]]
+![Security Groups](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/security-groups.png)
 
 |Security Group|Inbound|Source|Outbound|Destination|
 |---|---|---|---|---|
@@ -213,7 +213,7 @@ Internet ──▶ ALB-SG ──▶ App-SG ──▶ DB-SG
 
 No internal traffic uses CIDR blocks. Each tier references the previous tier's Security Group ID, ensuring dynamic and precise access control.
 
-![[app-sg-rules.png]]
+![App Security Group Rules](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/app-sg-rules.png)
 ### 4.3 Network ACLs
 
 |NACL|Inbound Rules|Outbound Rules|
@@ -226,7 +226,7 @@ No internal traffic uses CIDR blocks. Each tier references the previous tier's S
 
 ### 4.4 VPC Endpoints
 
-![[vpc-endpoints.png]]
+![VPC Endpoints](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/vpc-endpoints.png)
 
 |Endpoint|Service|Type|Attached Route Tables|
 |---|---|---|---|
@@ -237,7 +237,7 @@ No internal traffic uses CIDR blocks. Each tier references the previous tier's S
 
 ### 4.5 VPC Flow Logs
 
-![[vpc-flow-logs.png]]
+![VPC Flow Logs](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/vpc-flow-logs.png)
 
 |Flow Log|Destination|Traffic Type|Retention|
 |---|---|---|---|
@@ -431,7 +431,7 @@ terraform apply -var-file="terraform.tfvars"
 
 ### 8.3 Expected Apply Output
 
-![[terminal completed.png]]
+![Terminal Completed](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/terminal%20completed.png)
 
 ### 8.4 Deployment Regions
 
@@ -448,14 +448,14 @@ All screenshots were captured from the AWS Console with region set to **ap-south
 
 ### 9.1 VPC
 
-![[vpc-list.png]]
+![VPC List](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/vpc-list.png)
 
 - VPC `vpc-iac-vpc` exists with CIDR `10.0.0.0/16`
 - DNS resolution and hostnames enabled
 
 ### 9.2 Subnets
 
-![[subnet.png]]
+![Subnet](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/subnet.png)
 
 - 6 subnets across 2 AZs
 - 2 public, 2 private, 2 data
@@ -463,7 +463,7 @@ All screenshots were captured from the AWS Console with region set to **ap-south
 
 ### 9.3 NAT Gateways
 
-![[nat-gateway.png]]
+![NAT Gateway](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/nat-gateway.png)
 
 - 2 NAT Gateways in `Available` state
 - One per AZ, each with its own Elastic IP
@@ -471,14 +471,14 @@ All screenshots were captured from the AWS Console with region set to **ap-south
 
 ### 9.4 Route Tables
 
-![[route-tables.png]]
+![Route Tables](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/route-tables.png)
 
 - 4 route tables (public, 2 private, data)
 - Public → IGW, Private → NAT, Data → no default
 
 ### 9.5 Data Route Table Isolation
 
-![[data-route-table.png]]
+![Data Route Table](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/data-route-table.png)
 
 - Only the local route (`10.0.0.0/16`) exists
 - No `0.0.0.0/0` route — data tier cannot reach the internet
@@ -486,21 +486,21 @@ All screenshots were captured from the AWS Console with region set to **ap-south
 
 ### 9.6 Security Groups
 
-![[security-groups.png]]
+![Security Groups](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/security-groups.png)
 
 - 3 custom security groups: `alb-sg`, `app-sg`, `db-sg`
 - Each with least-privilege rules
 
 ### 9.7 Security Group Chaining
 
-![[app-sg-rules.png]]
+![App Security Group Rules](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/app-sg-rules.png)
 
 - App SG inbound rule source is **ALB SG ID** (not a CIDR block)
 - Demonstrates dynamic least-privilege access control
 
 ### 9.8 VPC Endpoints
 
-![[vpc-endpoints.png]]
+![VPC Endpoints](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/vpc-endpoints.png)
 
 - S3 and DynamoDB Gateway Endpoints
 - Status: `Available`
@@ -508,14 +508,14 @@ All screenshots were captured from the AWS Console with region set to **ap-south
 
 ### 9.9 VPC Flow Logs
 
-![[vpc-flow-logs.png]]
+![VPC Flow Logs](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/vpc-flow-logs.png)
 
 - 2 flow logs: CloudWatch + S3
 - Traffic type: `ALL`
 - Status: `Active`
 
 ### 9.10 Deployment Output
-![[terminal completed.png]]
+![Terminal Completed](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/cdcb7457f28839ea03cdb72c6f02a3a235cece37/AWS%20VPC%20Terraform/images/terminal%20completed.png)
 
 
 - `Apply complete! Resources: 40 added`
