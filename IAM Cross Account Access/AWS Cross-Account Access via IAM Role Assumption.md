@@ -18,7 +18,7 @@ The environment consists of two isolated AWS accounts:
 - **Workload Account (Target):** ``726602571279`` — Contains the `SecurityAuditRole`.
     
 
-![[aws_cross_account_assume_role.png]]
+![AWS Cross Account Assume Role](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/0b70e1494d033e026be9b252d994f8c129826565/IAM%20Cross%20Account%20Access/Images/aws_cross_account_assume_role.png)
 
 ---
 
@@ -53,7 +53,7 @@ Created the `SecurityAuditRole` in the Workload Account. The trust policy strict
 }
 ```
 
-![[trust relationship .png]]
+![Trust Relationship](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/0b70e1494d033e026be9b252d994f8c129826565/IAM%20Cross%20Account%20Access/Images/trust%20relationship%20.png)
 
 ---
 
@@ -82,7 +82,7 @@ It only allows read-only EC2 actions and is attached to the `SecurityAuditRole`.
 }
 ```
 
-![[security_audit_policy.png]]
+![Security Audit Policy](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/0b70e1494d033e026be9b252d994f8c129826565/IAM%20Cross%20Account%20Access/Images/security_audit_policy.png)
 
 ---
 
@@ -122,7 +122,7 @@ aws sts assume-role \
   --token-code "XXXXXX"
 ```
 
-![[cloudshell.png]]
+![CloudShell](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/0b70e1494d033e026be9b252d994f8c129826565/IAM%20Cross%20Account%20Access/Images/cloudshell.png)
 
 ---
 
@@ -213,7 +213,7 @@ To detect misuse of this cross-account access, CloudTrail is enabled in the Work
 
 The `AssumeRole` API calls are logged for auditing. In a production environment, CloudWatch Metric Filters can be configured to trigger SNS alarms for failed `AccessDenied` attempts.
 
-![[cloudtrail.png]]
+![CloudTrail](https://raw.githubusercontent.com/heyyprakhar/AWS-Cloud-Security-Projects/0b70e1494d033e026be9b252d994f8c129826565/IAM%20Cross%20Account%20Access/Images/cloudtrail.png)
 
 ---
 
