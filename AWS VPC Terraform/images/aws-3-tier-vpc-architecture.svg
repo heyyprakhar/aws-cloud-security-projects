@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" font-family="Inter, Roboto, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#232F3E"/></marker>
+  <marker id="arp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8C4FFF"/></marker>
+  <symbol id="nat" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#8C4FFF"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24H46M39 17L46 24L39 31M50 42H18M25 35L18 42L25 49"/></g></symbol>
+  <symbol id="alb" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#8C4FFF"/><g stroke="#fff" stroke-width="3" fill="none"><path d="M32 23V31M16 41V35H48V41M32 31V41"/></g><g fill="#fff"><circle cx="32" cy="17" r="6"/><circle cx="16" cy="46" r="6"/><circle cx="32" cy="46" r="6"/><circle cx="48" cy="46" r="6"/></g></symbol>
+  <symbol id="ec2" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#ED7100"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"><rect x="17" y="17" width="30" height="30"/><path d="M25 10V17M39 10V17M25 47V54M39 47V54M10 25H17M10 39H17M47 25H54M47 39H54"/></g><rect x="26" y="26" width="12" height="12" fill="#fff"/></symbol>
+  <symbol id="rds" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#3B48CC"/><g stroke="#fff" stroke-width="3" fill="none"><ellipse cx="32" cy="18" rx="15" ry="6"/><path d="M17 18V46A15 6 0 0 0 47 46V18M17 32A15 6 0 0 0 47 32"/></g></symbol>
+  <symbol id="igw" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#8C4FFF"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"><path d="M14 50V32A18 18 0 0 1 50 32V50M32 14V50M24 38H40"/></g></symbol>
+</defs>
+
+<rect width="1920" height="1080" fill="#fff"/>
+<text x="960" y="46" text-anchor="middle" font-size="30" font-weight="700" fill="#232F3E">Production-Grade 3-Tier VPC — AWS ap-south-1 (Mumbai)</text>
+
+<!-- Region -->
+<rect x="40" y="70" width="1300" height="910" rx="14" fill="#F7FBFF" stroke="#7FB3E6" stroke-width="2.5" stroke-dasharray="12 7"/>
+<text x="62" y="96" font-size="17" font-weight="600" fill="#2E73B8">AWS Region: ap-south-1 (Mumbai)</text>
+
+<!-- VPC -->
+<rect x="70" y="110" width="1240" height="750" rx="16" fill="#fff" stroke="#1A73E8" stroke-width="3"/>
+<text x="92" y="136" font-size="17" font-weight="700" fill="#1A73E8">VPC (10.0.0.0/16)</text>
+
+<!-- AZ a -->
+<rect x="100" y="150" width="570" height="680" rx="12" fill="#FFFBF5" stroke="#F58536" stroke-width="2.2" stroke-dasharray="10 6"/>
+<text x="120" y="174" font-size="15" font-weight="600" fill="#D86613">Availability Zone: ap-south-1a</text>
+<!-- AZ b -->
+<rect x="710" y="150" width="570" height="680" rx="12" fill="#FFFBF5" stroke="#F58536" stroke-width="2.2" stroke-dasharray="10 6"/>
+<text x="730" y="174" font-size="15" font-weight="600" fill="#D86613">Availability Zone: ap-south-1b</text>
+
+<!-- Subnets A -->
+<rect x="120" y="190" width="530" height="160" rx="10" fill="#F1F7E4" stroke="#7AA116" stroke-width="2.5"/>
+<text x="138" y="214" font-size="14" font-weight="700" fill="#5C7A0F">PUBLIC SUBNET  10.0.1.0/24</text>
+<rect x="120" y="390" width="530" height="160" rx="10" fill="#E8F2FB" stroke="#147EB8" stroke-width="2.5"/>
+<text x="138" y="414" font-size="14" font-weight="700" fill="#0F6391">PRIVATE SUBNET  10.0.10.0/24</text>
+<rect x="120" y="590" width="530" height="200" rx="10" fill="#FDECEE" stroke="#DD344C" stroke-width="2.5"/>
+<text x="138" y="614" font-size="14" font-weight="700" fill="#B8203A">DATA SUBNET  10.0.100.0/24</text>
+<!-- Subnets B -->
+<rect x="730" y="190" width="530" height="160" rx="10" fill="#F1F7E4" stroke="#7AA116" stroke-width="2.5"/>
+<text x="748" y="214" font-size="14" font-weight="700" fill="#5C7A0F">PUBLIC SUBNET  10.0.2.0/24</text>
+<rect x="730" y="390" width="530" height="160" rx="10" fill="#E8F2FB" stroke="#147EB8" stroke-width="2.5"/>
+<text x="748" y="414" font-size="14" font-weight="700" fill="#0F6391">PRIVATE SUBNET  10.0.11.0/24</text>
+<rect x="730" y="590" width="530" height="200" rx="10" fill="#FDECEE" stroke="#DD344C" stroke-width="2.5"/>
+<text x="748" y="614" font-size="14" font-weight="700" fill="#B8203A">DATA SUBNET  10.0.101.0/24</text>
+
+<!-- Icons A -->
+<use href="#nat" x="190" y="228" width="64" height="64"/>
+<text x="222" y="312" text-anchor="middle" font-size="13" fill="#232F3E">NAT Gateway</text>
+<use href="#alb" x="438" y="228" width="64" height="64"/>
+<text x="470" y="312" text-anchor="middle" font-size="13" fill="#232F3E">Load Balancer</text>
+<use href="#ec2" x="438" y="428" width="64" height="64"/>
+<text x="470" y="512" text-anchor="middle" font-size="13" fill="#232F3E">App Servers (EC2)</text>
+<use href="#rds" x="438" y="636" width="64" height="64"/>
+<text x="470" y="720" text-anchor="middle" font-size="13" fill="#232F3E">Database (RDS)</text>
+<rect x="370" y="740" width="200" height="28" rx="14" fill="#fff" stroke="#DD344C" stroke-width="2"/>
+<text x="470" y="759" text-anchor="middle" font-size="13" font-weight="700" fill="#DD344C">NO INTERNET ACCESS</text>
+
+<!-- Icons B -->
+<use href="#nat" x="1126" y="228" width="64" height="64"/>
+<text x="1158" y="312" text-anchor="middle" font-size="13" fill="#232F3E">NAT Gateway</text>
+<use href="#alb" x="878" y="228" width="64" height="64"/>
+<text x="910" y="312" text-anchor="middle" font-size="13" fill="#232F3E">Load Balancer</text>
+<use href="#ec2" x="878" y="428" width="64" height="64"/>
+<text x="910" y="512" text-anchor="middle" font-size="13" fill="#232F3E">App Servers (EC2)</text>
+<use href="#rds" x="878" y="636" width="64" height="64"/>
+<text x="910" y="720" text-anchor="middle" font-size="13" fill="#232F3E">Database (RDS)</text>
+<rect x="810" y="740" width="200" height="28" rx="14" fill="#fff" stroke="#DD344C" stroke-width="2"/>
+<text x="910" y="759" text-anchor="middle" font-size="13" font-weight="700" fill="#DD344C">NO INTERNET ACCESS</text>
+
+<!-- Inbound: Internet -> IGW -> Public subnets -->
+<path d="M690 995V962" stroke="#232F3E" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<path d="M690 875V255M690 255H652M690 255H728" stroke="#232F3E" stroke-width="2.5" fill="none"/>
+<path d="M690 255H652" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M690 255H728" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="655" y="490" width="70" height="22" rx="4" fill="#fff"/>
+<text x="690" y="506" text-anchor="middle" font-size="12" font-weight="600" fill="#232F3E">HTTPS 443</text>
+<text x="702" y="985" font-size="12" font-weight="600" fill="#232F3E">HTTPS 443</text>
+
+<!-- Public -> Private (8080), Private -> Data (5432) -->
+<path d="M470 322V424" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="476" y="364" width="44" height="20" rx="4" fill="#fff"/><text x="498" y="379" text-anchor="middle" font-size="12" font-weight="600" fill="#232F3E">8080</text>
+<path d="M910 322V424" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="916" y="364" width="44" height="20" rx="4" fill="#fff"/><text x="938" y="379" text-anchor="middle" font-size="12" font-weight="600" fill="#232F3E">8080</text>
+<path d="M470 522V632" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="476" y="567" width="44" height="20" rx="4" fill="#fff"/><text x="498" y="582" text-anchor="middle" font-size="12" font-weight="600" fill="#232F3E">5432</text>
+<path d="M910 522V632" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="916" y="567" width="44" height="20" rx="4" fill="#fff"/><text x="938" y="582" text-anchor="middle" font-size="12" font-weight="600" fill="#232F3E">5432</text>
+
+<!-- Private -> NAT -->
+<path d="M438 460H222V324" stroke="#8C4FFF" stroke-width="2.5" fill="none" marker-end="url(#arp)"/>
+<path d="M942 460H1158V324" stroke="#8C4FFF" stroke-width="2.5" fill="none" marker-end="url(#arp)"/>
+
+<!-- NAT -> IGW outbound -->
+<path d="M190 260H85V905H655" stroke="#8C4FFF" stroke-width="2.5" fill="none" marker-end="url(#arp)"/>
+<path d="M1190 260H1295V905H725" stroke="#8C4FFF" stroke-width="2.5" fill="none" marker-end="url(#arp)"/>
+<rect x="270" y="893" width="130" height="20" rx="4" fill="#F7FBFF"/><text x="335" y="908" text-anchor="middle" font-size="12" font-weight="600" fill="#6B35D6">outbound updates</text>
+<rect x="980" y="893" width="130" height="20" rx="4" fill="#F7FBFF"/><text x="1045" y="908" text-anchor="middle" font-size="12" font-weight="600" fill="#6B35D6">outbound updates</text>
+
+<!-- IGW -->
+<use href="#igw" x="660" y="875" width="60" height="60"/>
+<text x="690" y="954" text-anchor="middle" font-size="13" font-weight="600" fill="#232F3E">Internet Gateway</text>
+<!-- Internet cloud -->
+<g transform="translate(650,992) scale(0.95)"><path d="M14 46H62A14 14 0 0 0 64 18A20 20 0 0 0 28 14A16 16 0 0 0 14 46Z" fill="#E8EEF7" stroke="#232F3E" stroke-width="2.5"/></g>
+<text x="745" y="1030" font-size="15" font-weight="600" fill="#232F3E">Internet</text>
+
+<!-- Data -> endpoints -->
+<path d="M1260 775H1398" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M385 790V815H1398" stroke="#232F3E" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<rect x="1290" y="826" width="105" height="18" rx="4" fill="#fff"/>
+<text x="1342" y="840" text-anchor="middle" font-size="11" font-weight="600" fill="#232F3E">private AWS access</text>
+
+<!-- Right panel -->
+<g>
+<rect x="1400" y="130" width="480" height="170" rx="12" fill="#fff" stroke="#DD344C" stroke-width="2"/>
+<rect x="1420" y="148" width="34" height="34" rx="5" fill="#DD344C"/><path d="M1437 154L1448 158V167C1448 173 1443 177 1437 179C1431 177 1426 173 1426 167V158Z" fill="none" stroke="#fff" stroke-width="2"/>
+<text x="1466" y="171" font-size="17" font-weight="700" fill="#232F3E">Security Groups</text>
+<text x="1420" y="208" font-size="14" fill="#374151">ALB → App → DB  (SG chaining)</text>
+<text x="1420" y="236" font-size="13" fill="#5A6B86">sg-alb: allow 443 from 0.0.0.0/0</text>
+<text x="1420" y="260" font-size="13" fill="#5A6B86">sg-app: allow 8080 from sg-alb only</text>
+<text x="1420" y="284" font-size="13" fill="#5A6B86">sg-db: allow 5432 from sg-app only</text>
+
+<rect x="1400" y="340" width="480" height="170" rx="12" fill="#fff" stroke="#8C4FFF" stroke-width="2"/>
+<rect x="1420" y="358" width="34" height="34" rx="5" fill="#8C4FFF"/><path d="M1427 375H1447M1437 366V384" stroke="#fff" stroke-width="2.5"/>
+<text x="1466" y="381" font-size="17" font-weight="700" fill="#232F3E">Network ACLs</text>
+<text x="1420" y="418" font-size="14" fill="#374151">Public / Private / Data  (stateless, per-subnet tier)</text>
+<text x="1420" y="446" font-size="13" fill="#5A6B86">Public: allow 443 in, ephemeral ports out</text>
+<text x="1420" y="470" font-size="13" fill="#5A6B86">Private: allow 8080 from public tier only</text>
+<text x="1420" y="494" font-size="13" fill="#5A6B86">Data: allow 5432 from private tier only</text>
+
+<rect x="1400" y="550" width="480" height="170" rx="12" fill="#fff" stroke="#E7157B" stroke-width="2"/>
+<rect x="1420" y="568" width="34" height="34" rx="5" fill="#E7157B"/><path d="M1427 592L1433 584L1439 589L1448 576" stroke="#fff" stroke-width="2.5" fill="none"/>
+<text x="1466" y="591" font-size="17" font-weight="700" fill="#232F3E">VPC Flow Logs</text>
+<text x="1420" y="628" font-size="14" fill="#374151">VPC Flow Logs → CloudWatch + S3</text>
+<text x="1420" y="656" font-size="13" fill="#5A6B86">Captures accepted / rejected traffic</text>
+<text x="1420" y="680" font-size="13" fill="#5A6B86">CloudWatch Logs for alarms, S3 for retention</text>
+<text x="1420" y="704" font-size="13" fill="#5A6B86">Attached at VPC level (all ENIs)</text>
+
+<rect x="1400" y="750" width="480" height="130" rx="12" fill="#fff" stroke="#8C4FFF" stroke-width="2"/>
+<use href="#nat" x="1420" y="768" width="34" height="34"/>
+<text x="1466" y="791" font-size="17" font-weight="700" fill="#232F3E">VPC Gateway Endpoints</text>
+<text x="1420" y="830" font-size="14" fill="#374151">VPC Gateway Endpoints (S3, DynamoDB)</text>
+<text x="1420" y="858" font-size="13" fill="#5A6B86">Private route-table entries, no NAT or internet path</text>
+</g>
+
+<!-- Dashed associations to VPC -->
+<g stroke="#5A6B86" stroke-width="2" stroke-dasharray="7 5" fill="none">
+<path d="M1400 215H1310"/><path d="M1400 425H1310"/><path d="M1400 635H1310"/>
+</g>
+<g fill="#5A6B86"><circle cx="1310" cy="215" r="4"/><circle cx="1310" cy="425" r="4"/><circle cx="1310" cy="635" r="4"/></g>
+
+<!-- Legend -->
+<rect x="1400" y="985" width="480" height="64" rx="10" fill="#fff" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="1420" y="1008" font-size="13" font-weight="700" fill="#232F3E">Legend</text>
+<path d="M1420 1030H1470" stroke="#232F3E" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="1480" y="1035" font-size="13" fill="#374151">Solid arrow = traffic flow</text>
+<path d="M1665 1030H1715" stroke="#5A6B86" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1725" y="1035" font-size="13" fill="#374151">Dashed = security/logical</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTozNDFlMzJkMC1jM2Y1LTQxYWUtYTc0NC0yODA0ZTE4M2NjZjgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaL3MmOXpt2JeRemg09CH1gcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDowNzY0OWRjOC1lMDc0LTQxZDctOTAzMy1jMDRkNTc5NjE2ZWNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo7TN3+lnrsJoP1EMFoWK0rQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggv94QXVinM0zMVtw5VSrBwIbHodkzhfGEjILt3N0uYV+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKJboGd5c29vxb/cWJVfkXsAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYINgSNltwNP4pqO2OEBm7g7SkA/Z7r+9F0uQViu/G/xS+ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTP5Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjM0MWUzMmQwLWMzZjUtNDFhZS1hNzQ0LTI4MDRlMTgzY2NmOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmZkNmYzOTljLTZkYmUtNDA0My04MGQ1LWJmM2I2MWRlMDI1MXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCC/3hBdWKczTMxW3DlVKsHAhseh2TOF8YSMgu3c3S5hX6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggkW8KK93BH7zmlqCc+N1i96tf1IDZaVjS2hnLbJwhheiiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg7l5hC2gB1Pf8wCqLsfnzZaCxwYPsezbEYyCdhpdzeaV0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJDj+hcTPb3IXdzXGisTVmgMMgNrdCZsQC8SqUOSY3N/bUi6B4g2Xq+DS+f4Alt8omvqVyA1k+2tRctu4ttgtB0=</c2pa:manifest></metadata></svg>
